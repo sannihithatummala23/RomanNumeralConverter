@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class InvalidInputException extends RuntimeException {
+public class InvalidInputException extends Exception {
 
 	private String errorMessage;
 

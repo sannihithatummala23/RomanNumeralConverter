@@ -24,17 +24,7 @@ public class RomanNumeralConverterExceptionHandler {
 	}
 
 	/**
-	 * Handles exception when input is String/null/Decimals or other runtime exceptions
-	 * @param exception
-	 */
-	@ExceptionHandler(RuntimeException.class)
-	public ResponseEntity<String> handleRuntimeException(RuntimeException exception) {
-		log.error("::::Error Message::::" + exception.getMessage());
-		return new ResponseEntity<String>(RomanNumeralConstants.USER_INPUT_ERROR_MESSAGE, HttpStatus.BAD_REQUEST);
-	}
-
-	/**
-	 * Handles exception when not query parameter given in URI or for invalid URIs
+	 * Handles exception when no query parameter given in URI, string type inputs or for other invalid inputs
 	 * @param exception
 	 */
 	@ExceptionHandler(Exception.class)
