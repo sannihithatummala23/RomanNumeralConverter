@@ -80,3 +80,12 @@
 2021-09-30 22:37:51,612 [http-nio-8080-exec-4] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Roman Numeral value is::::XXX 
 2021-09-30 22:37:56,063 [http-nio-8080-exec-5] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "null" 
 2021-09-30 22:38:02,635 [http-nio-8080-exec-7] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "sanni" 
+2021-09-30 22:53:15,573 [main] INFO  c.a.r.RomanNumeralConverterProject       : Starting RomanNumeralConverterProject using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 57000 (/Users/sannihithatummala/git/target/classes started by sannihithatummala in /Users/sannihithatummala/git) 
+2021-09-30 22:53:15,578 [main] INFO  c.a.r.RomanNumeralConverterProject       : No active profile set, falling back to default profiles: default 
+2021-09-30 22:53:16,642 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http) 
+2021-09-30 22:53:16,652 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2021-09-30 22:53:16,653 [main] INFO  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53] 
+2021-09-30 22:53:16,724 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext 
+2021-09-30 22:53:16,724 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1084 ms 
+2021-09-30 22:53:17,143 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '' 
+2021-09-30 22:53:17,159 [main] INFO  c.a.r.RomanNumeralConverterProject       : Started RomanNumeralConverterProject in 2.314 seconds (JVM running for 2.756) 
