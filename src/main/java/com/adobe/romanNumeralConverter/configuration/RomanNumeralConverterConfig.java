@@ -1,11 +1,10 @@
 package com.adobe.romanNumeralConverter.configuration;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
 @Data
 @NoArgsConstructor
@@ -13,8 +12,8 @@ import lombok.NoArgsConstructor;
 @Configuration
 @ConfigurationProperties("romannumerals")
 public class RomanNumeralConverterConfig {
-	private String[] units;
-	private String[] tens;
-	private String[] hundreds;
-	private String[] thousands;
+    private String[] units;
+    private String[] tens;
+    private String[] hundreds;
+    private String[] thousands;
 }

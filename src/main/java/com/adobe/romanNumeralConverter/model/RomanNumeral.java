@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class RomanNumeral {
 
-	private String input;
-	private String output;
+    private String input;
+    private String output;
 }
