@@ -1,97 +1,13 @@
-2021-10-03 11:25:46,015 [main] INFO  c.a.r.RomanNumeralConverterProject       : Starting RomanNumeralConverterProject using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 1748 (/Users/sannihithatummala/git/target/classes started by sannihithatummala in /Users/sannihithatummala/git) 
-2021-10-03 11:25:46,021 [main] INFO  c.a.r.RomanNumeralConverterProject       : No active profile set, falling back to default profiles: default 
-2021-10-03 11:25:46,890 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http) 
-2021-10-03 11:25:46,899 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat] 
-2021-10-03 11:25:46,899 [main] INFO  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53] 
-2021-10-03 11:25:46,960 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext 
-2021-10-03 11:25:46,960 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 885 ms 
-2021-10-03 11:25:47,265 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '' 
-2021-10-03 11:25:47,273 [main] INFO  c.a.r.RomanNumeralConverterProject       : Started RomanNumeralConverterProject in 6.702 seconds (JVM running for 7.115) 
-2021-10-03 11:30:15,154 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet' 
-2021-10-03 11:30:15,155 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet' 
-2021-10-03 11:30:15,157 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms 
-2021-10-03 11:30:15,192 [http-nio-8080-exec-2] INFO  c.a.r.c.IntegerToRomanConvController     : ::::Entered getConvertedRomanVal method in IntegerToRomanConvController class, input is :::: 22 
-2021-10-03 11:30:15,198 [http-nio-8080-exec-2] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Entered convertIntegerToRoman method inside IntegerToRomanConvService class:::: 
-2021-10-03 11:30:15,199 [http-nio-8080-exec-2] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Roman Numeral value is::::XXII 
-2021-10-03 11:30:22,834 [http-nio-8080-exec-3] INFO  c.a.r.c.IntegerToRomanConvController     : ::::Entered getConvertedRomanVal method in IntegerToRomanConvController class, input is :::: 3999 
-2021-10-03 11:30:22,834 [http-nio-8080-exec-3] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Entered convertIntegerToRoman method inside IntegerToRomanConvService class:::: 
-2021-10-03 11:30:22,834 [http-nio-8080-exec-3] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Roman Numeral value is::::MMMCMXCIX 
-2021-10-03 12:14:53,326 [http-nio-8080-exec-5] INFO  c.a.r.c.IntegerToRomanConvController     : ::::Entered getConvertedRomanVal method in IntegerToRomanConvController class, input is :::: 0 
-2021-10-03 12:14:53,330 [http-nio-8080-exec-5] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Entered convertIntegerToRoman method inside IntegerToRomanConvService class:::: 
-2021-10-03 12:14:53,333 [http-nio-8080-exec-5] ERROR c.a.r.s.IntegerToRomanConverterService   : ::::Convertion is not supported for the integer greater than 3999 or less than 0::::0 
-2021-10-03 12:16:51,994 [http-nio-8080-exec-8] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "sanni" 
-2021-10-03 12:18:41,593 [http-nio-8080-exec-10] INFO  c.a.r.c.IntegerToRomanConvController     : ::::Entered getConvertedRomanVal method in IntegerToRomanConvController class, input is :::: 1 
-2021-10-03 12:18:41,594 [http-nio-8080-exec-10] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Entered convertIntegerToRoman method inside IntegerToRomanConvService class:::: 
-2021-10-03 12:18:41,594 [http-nio-8080-exec-10] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Roman Numeral value is::::I 
-2021-10-03 12:18:50,162 [http-nio-8080-exec-1] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "null" 
-2021-10-03 12:20:37,149 [http-nio-8080-exec-3] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Required request parameter 'query' for method parameter type Integer is not present 
-2021-10-03 12:42:15,934 [http-nio-8080-exec-4] INFO  c.a.r.c.IntegerToRomanConvController     : ::::Entered getConvertedRomanVal method in IntegerToRomanConvController class, input is :::: 4000 
-2021-10-03 12:42:15,937 [http-nio-8080-exec-4] INFO  c.a.r.s.IntegerToRomanConverterService   : ::::Entered convertIntegerToRoman method inside IntegerToRomanConvService class:::: 
-2021-10-03 12:42:15,937 [http-nio-8080-exec-4] ERROR c.a.r.s.IntegerToRomanConverterService   : ::::Convertion is not supported for the integer greater than 3999 or less than 0::::4000 
-2021-10-03 12:47:50,726 [main] INFO  c.a.r.RomanNumeralConverterProject       : Starting RomanNumeralConverterProject using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 2100 (/Users/sannihithatummala/git/target/classes started by sannihithatummala in /Users/sannihithatummala/git) 
-2021-10-03 12:47:50,729 [main] INFO  c.a.r.RomanNumeralConverterProject       : No active profile set, falling back to default profiles: default 
-2021-10-03 12:47:51,516 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http) 
-2021-10-03 12:47:51,526 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat] 
-2021-10-03 12:47:51,526 [main] INFO  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53] 
-2021-10-03 12:47:51,584 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext 
-2021-10-03 12:47:51,585 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 811 ms 
-2021-10-03 12:47:51,884 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '' 
-2021-10-03 12:47:51,894 [main] INFO  c.a.r.RomanNumeralConverterProject       : Started RomanNumeralConverterProject in 6.581 seconds (JVM running for 6.973) 
-2021-10-03 12:48:04,434 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet' 
-2021-10-03 12:48:04,435 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet' 
-2021-10-03 12:48:04,436 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms 
-2021-10-03 12:48:04,464 [http-nio-8080-exec-1] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "1.2" 
-2021-10-03 12:51:22,486 [http-nio-8080-exec-4] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Required request parameter 'query' for method parameter type Integer is not present 
-2021-10-03 12:56:13,568 [main] INFO  c.a.r.RomanNumeralConverterProject       : Starting RomanNumeralConverterProject using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 2122 (/Users/sannihithatummala/git/target/classes started by sannihithatummala in /Users/sannihithatummala/git) 
-2021-10-03 12:56:13,570 [main] INFO  c.a.r.RomanNumeralConverterProject       : No active profile set, falling back to default profiles: default 
-2021-10-03 12:56:14,369 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http) 
-2021-10-03 12:56:14,380 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat] 
-2021-10-03 12:56:14,380 [main] INFO  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53] 
-2021-10-03 12:56:14,434 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext 
-2021-10-03 12:56:14,434 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 820 ms 
-2021-10-03 12:56:14,715 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '' 
-2021-10-03 12:56:14,723 [main] INFO  c.a.r.RomanNumeralConverterProject       : Started RomanNumeralConverterProject in 6.547 seconds (JVM running for 6.928) 
-2021-10-03 12:56:23,582 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet' 
-2021-10-03 12:56:23,584 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet' 
-2021-10-03 12:56:23,586 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms 
-2021-10-03 12:56:23,617 [http-nio-8080-exec-1] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "*" 
-2021-10-03 13:07:45,956 [main] INFO  c.a.r.RomanNumeralConverterProject       : Starting RomanNumeralConverterProject using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 2188 (/Users/sannihithatummala/git/target/classes started by sannihithatummala in /Users/sannihithatummala/git) 
-2021-10-03 13:07:45,958 [main] INFO  c.a.r.RomanNumeralConverterProject       : No active profile set, falling back to default profiles: default 
-2021-10-03 13:07:46,746 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http) 
-2021-10-03 13:07:46,756 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat] 
-2021-10-03 13:07:46,757 [main] INFO  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53] 
-2021-10-03 13:07:46,810 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext 
-2021-10-03 13:07:46,810 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 808 ms 
-2021-10-03 13:07:47,089 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '' 
-2021-10-03 13:07:47,097 [main] INFO  c.a.r.RomanNumeralConverterProject       : Started RomanNumeralConverterProject in 6.537 seconds (JVM running for 6.898) 
-2021-10-03 13:07:55,321 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet' 
-2021-10-03 13:07:55,322 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet' 
-2021-10-03 13:07:55,323 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms 
-2021-10-03 13:07:55,345 [http-nio-8080-exec-1] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Required request parameter 'query' for method parameter type Integer is not present 
-2021-10-03 13:09:19,117 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : Starting IntegerToRomanConvControllerTest using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 2203 (started by sannihithatummala in /Users/sannihithatummala/git) 
-2021-10-03 13:09:19,118 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : No active profile set, falling back to default profiles: default 
-2021-10-03 13:09:20,429 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet '' 
-2021-10-03 13:09:20,430 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet '' 
-2021-10-03 13:09:20,431 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms 
-2021-10-03 13:09:20,461 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : Started IntegerToRomanConvControllerTest in 6.693 seconds (JVM running for 7.48) 
-2021-10-03 13:09:20,512 [main] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Required request parameter 'query' for method parameter type Integer is not present 
-2021-10-03 13:09:20,570 [main] INFO  c.a.r.c.IntegerToRomanConvController     : ::::Entered getConvertedRomanVal method in IntegerToRomanConvController class, input is :::: 22 
-2021-10-03 13:09:20,651 [main] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "s" 
-2021-10-03 13:10:08,800 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : Starting IntegerToRomanConvControllerTest using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 2210 (started by sannihithatummala in /Users/sannihithatummala/git) 
-2021-10-03 13:10:08,802 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : No active profile set, falling back to default profiles: default 
-2021-10-03 13:10:09,930 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet '' 
-2021-10-03 13:10:09,930 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet '' 
-2021-10-03 13:10:09,931 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms 
-2021-10-03 13:10:09,958 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : Started IntegerToRomanConvControllerTest in 6.49 seconds (JVM running for 7.15) 
-2021-10-03 13:10:10,000 [main] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Required request parameter 'query' for method parameter type Integer is not present 
-2021-10-03 13:10:10,051 [main] INFO  c.a.r.c.IntegerToRomanConvController     : ::::Entered getConvertedRomanVal method in IntegerToRomanConvController class, input is :::: 22 
-2021-10-03 13:10:10,122 [main] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "s" 
-2021-10-03 13:11:36,644 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : Starting IntegerToRomanConvControllerTest using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 2220 (started by sannihithatummala in /Users/sannihithatummala/git) 
-2021-10-03 13:11:36,646 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : No active profile set, falling back to default profiles: default 
-2021-10-03 13:11:37,766 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet '' 
-2021-10-03 13:11:37,766 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet '' 
-2021-10-03 13:11:37,767 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms 
-2021-10-03 13:11:37,794 [main] INFO  c.a.r.c.IntegerToRomanConvControllerTest : Started IntegerToRomanConvControllerTest in 6.448 seconds (JVM running for 7.121) 
-2021-10-03 13:11:37,836 [main] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Required request parameter 'query' for method parameter type Integer is not present 
-2021-10-03 13:11:37,881 [main] INFO  c.a.r.c.IntegerToRomanConvController     : ::::Entered getConvertedRomanVal method in IntegerToRomanConvController class, input is :::: 22 
-2021-10-03 13:11:37,949 [main] ERROR c.a.r.h.RomanNumeralConverterExceptionHandler : ::::Error Message::::Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "s" 
+2021-10-04 00:01:19,975 [main] INFO  c.a.r.RomanNumeralConverterProject       : Starting RomanNumeralConverterProject using Java 14.0.1 on Sannihithas-MacBook-Pro.local with PID 2928 (/Users/sannihithatummala/git/target/classes started by sannihithatummala in /Users/sannihithatummala/git) 
+2021-10-04 00:01:19,981 [main] INFO  c.a.r.RomanNumeralConverterProject       : No active profile set, falling back to default profiles: default 
+2021-10-04 00:01:20,955 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http) 
+2021-10-04 00:01:20,963 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2021-10-04 00:01:20,964 [main] INFO  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53] 
+2021-10-04 00:01:21,032 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext 
+2021-10-04 00:01:21,032 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1000 ms 
+2021-10-04 00:01:21,494 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator' 
+2021-10-04 00:01:21,530 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '' 
+2021-10-04 00:01:21,552 [main] INFO  c.a.r.RomanNumeralConverterProject       : Started RomanNumeralConverterProject in 6.968 seconds (JVM running for 7.368) 
+2021-10-04 00:01:27,720 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-10-04 00:01:27,720 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet' 
+2021-10-04 00:01:27,722 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms 
