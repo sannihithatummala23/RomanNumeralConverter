@@ -12,6 +12,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+This controller is responsible to accept requests to convert Integer to Roman Numumeral
+Ex: http://localhost:8080/romannumeral?query=10
+Output: X
+**/
+
 @Slf4j
 @RestController
 @RequestMapping("/romannumeral")
