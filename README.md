@@ -82,9 +82,9 @@ $`docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml
 Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
 ![Prometheus UI](https://user-images.githubusercontent.com/65324839/136108956-60f75b19-77e1-4d06-bb28-6e092b1477f6.JPG)
 
-### Integrate Grafana with Prometheus metrics:
+## Integrate Grafana with Prometheus metrics:
 
-Login and click on "Add Data Source" and select "Prometheus", then update HTTP URL(Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc') as defined in the prometheus.yml file.
+Login to Grafanaand click on "Add Data Source" and select "Prometheus", then update HTTP URL(Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc') as defined in the prometheus.yml file.
 ![Prometheus Config](https://user-images.githubusercontent.com/65324839/136107905-93bf6d84-3902-4cd3-a298-3d869e4cff66.JPG)
 
 
