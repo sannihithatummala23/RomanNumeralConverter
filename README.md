@@ -63,7 +63,7 @@ This ends up creating a pod and the service for the RomanNumeralConverter applic
 
 >3. In order to access the application 'http://localhost:8080/romannumeral?query=999', we need to execute k8 port-forwarding command that runs as backround process:
 $kubectl port-forward service/romannumeralconverter-svc -n monitoring 8080:8080 &
-![999](https://user-images.githubusercontent.com/65324839/136108777-ccfa5672-cede-4589-850a-fbd2d10c0baa.JPG)
+![999](https://user-images.githubusercontent.com/65324839/136109998-7e4df3fa-43af-4685-b3ef-fa92998d998c.JPG)
 
 >4. Deploy Grafana by executing the docker commands:
 $docker run -d --name grafana -p 3000:3000 grafana/grafana
