@@ -59,7 +59,7 @@ $kubectl create -f deployment.yml
 $kubectl create -f service.yml
 
 This ends up creating a pod and the service for the RomanNumeralConverter application. 
-![health](https://user-images.githubusercontent.com/65324839/136109280-a3c943ac-3ee9-4f69-8f5f-b982482bd778.JPG)
+![health](https://user-images.githubusercontent.com/65324839/136110196-142fe24c-f86a-4d11-9bf9-4514dfcb5ca7.JPG)
 
 >3. In order to access the application 'http://localhost:8080/romannumeral?query=999', we need to execute k8 port-forwarding command that runs as backround process:
 $kubectl port-forward service/romannumeralconverter-svc -n monitoring 8080:8080 &
@@ -72,7 +72,7 @@ Navigate to 'http://localhost:3000' to explore the Grafana.
 >5. Use the 'prometheus.yml' file available in the GitHub Project 'https://github.com/sannihithatummala23/DevOps' to configure the prometheus scrape_configs: 'spring-actuator' targets:[xx:xx:xx:xx:8080] with the Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc', so that it retrives the metrics data from Spring Boot Actuator /prometheus endpoint 'http://localhost:8080/actuator/prometheus'. Then deploy prometheus by executing the docker command:
 $docker pull prom/prometheus
 $docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
-![metrics](https://user-images.githubusercontent.com/65324839/136109057-0e4aa8c4-9c88-405d-aa42-d852a3492177.JPG)
+![metrics](https://user-images.githubusercontent.com/65324839/136110222-9bf65975-b69f-4e4b-b575-f48bddfe45ee.JPG)
 
 Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
 ![Prometheus UI](https://user-images.githubusercontent.com/65324839/136108956-60f75b19-77e1-4d06-bb28-6e092b1477f6.JPG)
