@@ -58,27 +58,24 @@ Run the 'automation-script' shell script available at 'https://github.com/sannih
 >1. Create a directory called 'project' and clone 'https://github.com/sannihithatummala23/DevOps' into it.
 
 >2. Create a K8 nameSpace called 'monitoring' and execute the k8 deployment and service files to create a deployment and service for our application:
-<html>
-<body>
-<p>$kubectl create -f deployment.yml
-$kubectl create -f service.yml</p>
-</body>
-</html>
+$`kubectl create namespace monitoring`
+$`kubectl create -f deployment.yml`
+$`kubectl create -f service.yml`
 
 This ends up creating a pod and the service for the RomanNumeralConverter application. 
 ![health](https://user-images.githubusercontent.com/65324839/136110196-142fe24c-f86a-4d11-9bf9-4514dfcb5ca7.JPG)
 
 >3. In order to access the application 'http://localhost:8080/romannumeral?query=999', we need to execute k8 port-forwarding command that runs as backround process:
-$kubectl port-forward service/romannumeralconverter-svc -n monitoring 8080:8080 &
+$`kubectl port-forward service/romannumeralconverter-svc -n monitoring 8080:8080 &`
 ![999](https://user-images.githubusercontent.com/65324839/136109998-7e4df3fa-43af-4685-b3ef-fa92998d998c.JPG)
 
 >4. Deploy Grafana by executing the docker commands:
-$docker run -d --name grafana -p 3000:3000 grafana/grafana
+$`docker run -d --name grafana -p 3000:3000 grafana/grafana`
 Navigate to 'http://localhost:3000' to explore the Grafana.
 
 >5. Use the 'prometheus.yml' file available in the GitHub Project 'https://github.com/sannihithatummala23/DevOps' to configure the prometheus scrape_configs: 'spring-actuator' targets:[xx:xx:xx:xx:8080] with the Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc', so that it retrives the metrics data from Spring Boot Actuator /prometheus endpoint 'http://localhost:8080/actuator/prometheus'. Then deploy prometheus by executing the docker command:
-$docker pull prom/prometheus
-$docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
+$`docker pull prom/prometheus`
+$`docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml`
 ![metrics](https://user-images.githubusercontent.com/65324839/136110222-9bf65975-b69f-4e4b-b575-f48bddfe45ee.JPG)
 
 Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
