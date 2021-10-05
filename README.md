@@ -64,8 +64,6 @@ Run the 'automation-script' shell script available at 'https://github.com/sannih
 $kubectl create -f service.yml</p>
 </body>
 </html>
-$kubectl create -f deployment.yml
-$kubectl create -f service.yml
 
 This ends up creating a pod and the service for the RomanNumeralConverter application. 
 ![health](https://user-images.githubusercontent.com/65324839/136110196-142fe24c-f86a-4d11-9bf9-4514dfcb5ca7.JPG)
