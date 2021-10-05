@@ -65,7 +65,7 @@ Navigate to http://localhost:3000 to explore the Grafana dashboard.
 
 #####Steps to run the project
 
->1. Run the shell script available in the GitHub Project(https://github.com/sannihithatummala23/DevOps) to automate the above steps
+>1. Run the 'automation-script' shell script available in the GitHub Project(https://github.com/sannihithatummala23/DevOps) to automate the above steps.
 >2. Deploy prometheus by executing the docker command:
 $docker run -d --name prometheus -p 9090:9090 -v {path_to_file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
 Note: The above step needs to be executed after the shell script, as the CLuster-IP of the roman-numeral-deploy pod needs to be updated at:
