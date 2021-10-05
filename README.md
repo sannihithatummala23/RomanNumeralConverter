@@ -1,9 +1,9 @@
-###RomanNumeralConverter project documentation
-####Project Overview
+### RomanNumeralConverter project documentation
+#### Project Overview
 
 This project is for converting Integer to Roman numeral value. Following endpoint [http://localhost:8080/romannumeral?query={integer}]  is made available for taking integer as input and convert into Roman numeral value and return JSON response with input and output. 
 
-#####Modules
+### Modules
 
 * controller
 > Class : IntegerToRomanConvController
@@ -63,7 +63,7 @@ Navigate to http://localhost:3000 to explore the Grafana dashboard.
 
 >6. Integrate Grafana with Prometheus metrics: Login and click on "Add Data Source" and select "Prometheus", then add HTTP URL as you defined in prometheus.yml file. Create a dashboard to visualize Prometheus metrics.
 
-#####Steps to run the project
+##### Steps to run the project
 
 >1. Run the 'automation-script' shell script available in the GitHub Project(https://github.com/sannihithatummala23/DevOps) to automate the above steps.
 >2. Deploy prometheus by executing the docker command:
@@ -75,7 +75,7 @@ Note: The above step needs to be executed after the shell script, as the CLuster
     static_configs:
     - targets: ['<Cluster-IP>:8080']
 
-#####Testing methodology
+##### Testing methodology
  >1. JUNIT test cases are already included as part of project to test positive (i.e giving integer as input) and negative case(i.e giving string as input).
  >2. Once application is up we can test following scenarios,
  >   * Case 1:
