@@ -1,10 +1,10 @@
 # RomanNumeralConverter project documentation
 
-## Project Overview
+### Project Overview
 
 This project is for converting Integer to Roman numeral value. Following endpoint 'http://localhost:8080/romannumeral?query={integer}' is made available for taking integer as input and convert into Roman numeral value and return JSON response with input and output. 
 
-#### Modules
+## Modules
 
 * controller
 > Class : IntegerToRomanConvController
@@ -35,7 +35,7 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 >  
 > In this we are having classes to handle the exceptions thrown by controller classes.
 
-#### DevOps CD Process:
+## DevOps CD Process:
 ![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
 
 This process presumes that your system has the following software's pre-installed: git, docker, kubernetes.
@@ -97,7 +97,7 @@ Monitoring Application metrics queries:
 
 ![cpu usage query](https://user-images.githubusercontent.com/65324839/136108195-ba97f53d-3470-4102-b3d4-d79a7e8aa80f.JPG)
 
-#### Testing methodology
+## Testing methodology
  >1. JUNIT test cases are already included as part of project to test positive (i.e giving integer as input) and negative case(i.e giving string as input).
  >2. Once application is up we can test following scenarios,
  >   * Case 1:
