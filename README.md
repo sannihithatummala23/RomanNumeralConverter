@@ -58,6 +58,12 @@ Run the 'automation-script' shell script available at 'https://github.com/sannih
 >1. Create a directory called 'project' and clone 'https://github.com/sannihithatummala23/DevOps' into it.
 
 >2. Create a K8 nameSpace called 'monitoring' and execute the k8 deployment and service files to create a deployment and service for our application:
+<html>
+<body>
+<p>$kubectl create -f deployment.yml
+$kubectl create -f service.yml</p>
+</body>
+</html>
 $kubectl create -f deployment.yml
 $kubectl create -f service.yml
 
