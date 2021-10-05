@@ -87,16 +87,28 @@ Create a dashboard to visualize Prometheus metrics.
      "input": "3999",
      "output": "MMMCMXCIX"
      }
+     ![3999](https://user-images.githubusercontent.com/65324839/136107067-1404f8bb-6646-4cb4-8c98-fc9e61e1058f.JPG)
+
  >   * Case 2: URI : 'http://localhost:8080/romannumeral?query=0'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
+       ![0](https://user-images.githubusercontent.com/65324839/136107018-75805066-bcb6-46ac-898e-a2b780d133bd.JPG)
+
  >   * Case 3 : URI : 'http://localhost:8080/romannumeral?query=sanni'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
+       ![sanni](https://user-images.githubusercontent.com/65324839/136106941-649e8c99-71c3-41d4-80c7-5283a01fe41c.JPG)
+
  >   * Case 4 : URI : 'http://localhost:8080/romannumeral?query=null'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
+       ![null](https://user-images.githubusercontent.com/65324839/136106702-1d10feed-2a32-41a8-ae3d-51ef35fc4c71.JPG)
+
  >   * Case 5 : URI : 'http://localhost:8080/romannumeral'
        Expected Output : URI is not supported. Please make a request to : 'http://localhost:8080/romannumeral?query={integer}' for getting integer converted to Roman numeral
+       ![romannumeral](https://user-images.githubusercontent.com/65324839/136106673-7be45cc4-e710-4bc1-9177-4bebd2971e07.JPG)
+
  >   * Case 6 : URI : 'http://localhost:8080/romannumeral?query=4000'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
+       !![4000](https://user-images.githubusercontent.com/65324839/136106518-5a838c79-e7d8-4a44-9c10-225ba482facf.JPG)
+
  >   * Case 7 : URI : 'http://localhost:8080/romannumeral?query=1.2'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
        ![1 2](https://user-images.githubusercontent.com/65324839/136106185-c0aae7a2-2bd3-4c88-8900-617ee41aeefb.JPG)
