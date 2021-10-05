@@ -35,6 +35,7 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 > In this we are having classes to handle the exceptions thrown by controller classes.
 
 ##### DevOps CD Process:
+![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
 
 This process presumes that your system has the following software's pre-installed: git, docker, kubernetes.
 
@@ -74,8 +75,21 @@ Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
 ## Integrate Grafana with Prometheus metrics
 
 Login and click on "Add Data Source" and select "Prometheus", then update HTTP URL(Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc') as defined in the prometheus.yml file.
+![Prometheus Config](https://user-images.githubusercontent.com/65324839/136107905-93bf6d84-3902-4cd3-a298-3d869e4cff66.JPG)
+
 
 Create a dashboard to visualize Prometheus metrics.
+![Image 10-4-21 at 10 49 PM](https://user-images.githubusercontent.com/65324839/136107968-028f4042-139e-4df8-8391-c30c2a626172.JPG)
+
+Monitoring Application metrics queries:
+
+![Exception query](https://user-images.githubusercontent.com/65324839/136108309-77b9798e-1feb-4b3e-98d7-391f9cdfc3a0.JPG)
+
+![status 400 query](https://user-images.githubusercontent.com/65324839/136108283-9ebc000c-b928-47d0-b8ca-f4568913a018.JPG)
+
+![process uptime](https://user-images.githubusercontent.com/65324839/136108231-e65aae5e-d363-41bb-8ba9-fd08a9713069.JPG)
+
+![cpu usage query](https://user-images.githubusercontent.com/65324839/136108195-ba97f53d-3470-4102-b3d4-d79a7e8aa80f.JPG)
 
 ##### Testing methodology
  >1. JUNIT test cases are already included as part of project to test positive (i.e giving integer as input) and negative case(i.e giving string as input).
@@ -112,5 +126,9 @@ Create a dashboard to visualize Prometheus metrics.
  >   * Case 7 : URI : 'http://localhost:8080/romannumeral?query=1.2'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
        ![1 2](https://user-images.githubusercontent.com/65324839/136106185-c0aae7a2-2bd3-4c88-8900-617ee41aeefb.JPG)
+       
+ >   * Case 8 : URI : 'http://localhost:8080/romannumeral?query=-23'
+       Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
+       ![-23](https://user-images.githubusercontent.com/65324839/136108472-6a1918c9-181c-4a17-b0c4-c2d222e8b767.JPG)
 
      
