@@ -34,12 +34,7 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 >  
 > In this we are having classes to handle the exceptions thrown by controller classes.
 
-#####Steps to run the project
-
->1. Docker image is available in docker hub, following command needs to be executed for pulling image and bringing up the container.
->2. 
-
-##### Process:
+##### DevOps CI/CD Process:
 
 This process presumes that your system has the following software's pre-installed: git, docker, kubernetes.
 
@@ -55,9 +50,9 @@ $docker push sannihithatummala/a-project:1.0 (Download image that can be found i
 >3. Execute the k8 deployment and service files available in the GitHub Project(https://github.com/sannihithatummala23/DevOps).
 $kubectl create -f deployment.yml
 $kubectl create -f service.yml
-This ends up creating a pod and the service for the RomanNumeralConverter application. Application can be available at http://localhost:30001/romannumeral?query=100
+This ends up creating a pod and the service for the RomanNumeralConverter application. Application can be available at http://localhost:8080/romannumeral?query=100
 
->4. Use the prometheus.yml file available in the GitHub Project(https://github.com/sannihithatummala23/DevOps) to configure the prometheus scrape configurations so that it retrives the metrics data from Spring Boot Actuator /prometheus endpoint(http://localhost:30001/actuator/prometheus). Then deploy prometheus by executing the docker command:
+>4. Use the prometheus.yml file available in the GitHub Project(https://github.com/sannihithatummala23/DevOps) to configure the prometheus scrape configurations so that it retrives the metrics data from Spring Boot Actuator /prometheus endpoint(http://localhost:8080/actuator/prometheus). Then deploy prometheus by executing the docker command:
 $docker pull prom/prometheus
 $docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
 Navigate to http://localhost:9090 to explore the Prometheus dashboard.
@@ -68,6 +63,17 @@ Navigate to http://localhost:3000 to explore the Grafana dashboard.
 
 >6. Integrate Grafana with Prometheus metrics: Login and click on "Add Data Source" and select "Prometheus", then add HTTP URL as you defined in prometheus.yml file. Create a dashboard to visualize Prometheus metrics.
 
+#####Steps to run the project
+
+>1. Run the shell script available in the GitHub Project(https://github.com/sannihithatummala23/DevOps) to automate the above steps
+>2. Deploy prometheus by executing the docker command:
+$docker run -d --name prometheus -p 9090:9090 -v {path_to_file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
+Note: The above step needs to be executed after the shell script, as the CLuster-IP of the roman-numeral-deploy pod needs to be updated at:
+  - job_name: 'spring-actuator'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['<Cluster-IP>:8080']
 
 #####Testing methodology
  >1. JUNIT test cases are already included as part of project to test positive (i.e giving integer as input) and negative case(i.e giving string as input).
