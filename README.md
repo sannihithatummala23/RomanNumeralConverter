@@ -6,6 +6,8 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 
 ## Modules:
 
+This section covers the various modules used in the project.
+
 * controller
 > Class : IntegerToRomanConvController
 >  
@@ -42,12 +44,12 @@ This process presumes that your system has the following software's pre-installe
 
 ### Pre-Steps:
 >1. Create a Docker image using the Dockerfile available in the GitHub Project 'https://github.com/sannihithatummala23/DevOps' by executing the command:
-$docker build --build-arg url=https://github.com/sannihithatummala23/RomanNumeralConverter.git\
+$`docker build --build-arg url=https://github.com/sannihithatummala23/RomanNumeralConverter.git\
   --build-arg project=RomanNumeralConverter\
-  -t sannihithatummala/a-project - < Dockerfile
+  -t sannihithatummala/a-project - < Dockerfile`
 The above Dockerfile which is a multi-stage build, in the first stage, clones the project from the GitHub url. In the second stage, it copies the required files from the first stage and helps to build the final image required to run the spring-boot application using the embedded Tomcat server.
 
->2. Then we upload the created docker image that can be found in ($docker image ls) to hub.docker.com executing the command:
+>2. Then we upload the created docker image that can be found in ($docker image ls) to hub.docker.com by executing the command:
 $docker push sannihithatummala/a-project:1.0
 
 ### Automated Script - steps to run the project:
