@@ -84,7 +84,7 @@ Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
 
 ## Integrate Grafana with Prometheus metrics:
 
-Login to Grafanaand click on "Add Data Source" and select "Prometheus", then update HTTP URL(Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc') as defined in the prometheus.yml file.
+Login to Grafana and click on "Add Data Source" and select "Prometheus", then update HTTP URL(Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc') as defined in the prometheus.yml file.
 ![Prometheus Config](https://user-images.githubusercontent.com/65324839/136107905-93bf6d84-3902-4cd3-a298-3d869e4cff66.JPG)
 
 
