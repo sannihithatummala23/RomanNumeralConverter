@@ -1,10 +1,10 @@
-# RomanNumeralConverter project documentation
+# RomanNumeralConverter Project Documentation
 
 ### Project Overview
 
 This project is for converting Integer to Roman numeral value. Following endpoint 'http://localhost:8080/romannumeral?query={integer}' is made available for taking integer as input and convert into Roman numeral value and return JSON response with input and output. 
 
-## Modules
+## Modules:
 
 * controller
 > Class : IntegerToRomanConvController
@@ -78,7 +78,7 @@ $docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:
 Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
 ![Prometheus UI](https://user-images.githubusercontent.com/65324839/136108956-60f75b19-77e1-4d06-bb28-6e092b1477f6.JPG)
 
-### Integrate Grafana with Prometheus metrics
+### Integrate Grafana with Prometheus metrics:
 
 Login and click on "Add Data Source" and select "Prometheus", then update HTTP URL(Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc') as defined in the prometheus.yml file.
 ![Prometheus Config](https://user-images.githubusercontent.com/65324839/136107905-93bf6d84-3902-4cd3-a298-3d869e4cff66.JPG)
@@ -97,7 +97,7 @@ Monitoring Application metrics queries:
 
 ![cpu usage query](https://user-images.githubusercontent.com/65324839/136108195-ba97f53d-3470-4102-b3d4-d79a7e8aa80f.JPG)
 
-## Testing methodology
+## Testing Methodology:
  >1. JUNIT test cases are already included as part of project to test positive (i.e giving integer as input) and negative case(i.e giving string as input).
  >2. Once application is up we can test following scenarios,
  >   * Case 1:
