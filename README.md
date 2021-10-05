@@ -76,7 +76,6 @@ $`docker run -d --name grafana -p 3000:3000 grafana/grafana`
  and navigate to 'http://localhost:3000' to explore the Grafana.
 
 >5. Use the 'prometheus.yml' file available in the GitHub Project 'https://github.com/sannihithatummala23/DevOps' to configure the prometheus scrape_configs: 'spring-actuator' targets:[xx:xx:xx:xx:8080] with the Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc', so that it retrives the metrics data from Spring Boot Actuator /prometheus endpoint 'http://localhost:8080/actuator/prometheus'. Then deploy prometheus by executing the docker command:
-$`docker pull prom/prometheus`
 $`docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml`
 ![metrics](https://user-images.githubusercontent.com/65324839/136110222-9bf65975-b69f-4e4b-b575-f48bddfe45ee.JPG)
 
