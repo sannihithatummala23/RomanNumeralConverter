@@ -62,7 +62,7 @@ $`kubectl create namespace monitoring`
 $`kubectl create -f deployment.yml`
 $`kubectl create -f service.yml`
 
-This ends up creating a pod and the service for the RomanNumeralConverter application. 
+This ends up creating a pod and the service for the RomanNumeralConverter application. We can check the health of the application by hitting 'http://localhost:8080/actuators/health'
 ![health](https://user-images.githubusercontent.com/65324839/136110196-142fe24c-f86a-4d11-9bf9-4514dfcb5ca7.JPG)
 
 >3. In order to access the application 'http://localhost:8080/romannumeral?query=999', we need to execute k8 port-forwarding command that runs as backround process:
