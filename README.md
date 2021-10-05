@@ -1,4 +1,4 @@
-##### RomanNumeralConverter project documentation
+# RomanNumeralConverter project documentation
 
 ## Project Overview
 
