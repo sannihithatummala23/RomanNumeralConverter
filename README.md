@@ -62,12 +62,14 @@ $`kubectl create namespace monitoring`
 $`kubectl create -f deployment.yml`
 $`kubectl create -f service.yml`
 
-This ends up creating a pod and the service for the RomanNumeralConverter application. We can check the health of the application by hitting 'http://localhost:8080/actuators/health'
-![health](https://user-images.githubusercontent.com/65324839/136110196-142fe24c-f86a-4d11-9bf9-4514dfcb5ca7.JPG)
+This ends up creating a pod and the service for the RomanNumeralConverter application.
 
 >3. In order to access the application 'http://localhost:8080/romannumeral?query=999', we need to execute k8 port-forwarding command that runs as backround process:
 $`kubectl port-forward service/romannumeralconverter-svc -n monitoring 8080:8080 &`
 ![999](https://user-images.githubusercontent.com/65324839/136109998-7e4df3fa-43af-4685-b3ef-fa92998d998c.JPG)
+
+We can also check the health of the application by hitting 'http://localhost:8080/actuator/health'
+![health](https://user-images.githubusercontent.com/65324839/136110196-142fe24c-f86a-4d11-9bf9-4514dfcb5ca7.JPG)
 
 >4. Deploy Grafana by executing the docker commands:
 $`docker run -d --name grafana -p 3000:3000 grafana/grafana`
