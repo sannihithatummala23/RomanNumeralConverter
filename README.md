@@ -1,56 +1,32 @@
-# RomanNumeralConverter Project Documentation
-- [Project Overview](#Project Overview)
+* [Packaging Layout / Dependency Attribution](#general-information)
+* [Technologies Used](#technologies-used)
+* [Building & Running Project](#Building-running-project)
+    * [Pre-steps](#pre-steps)
+    * [Automated Script - steps to run the project](#automated-script)
+* [Integrate Grafana with Prometheus metrics](#Integrate-Grafana-with-Prometheus-metrics)
+* [Monitoring Application metrics queries](#monitoring-application-metrics-queries)
+* [Alerting](#alerting)
+* [Testing Methodology](#testing-methodology)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+
+
+- [Heading](#heading)
   * [Sub-heading](#sub-heading)
     + [Sub-sub-heading](#sub-sub-heading)
-- [Heading](#heading-1)
-  * [Sub-heading](#sub-heading-1)
-    + [Sub-sub-heading](#sub-sub-heading-1)
-- [Heading](#heading-2)
-  * [Sub-heading](#sub-heading-2)
-    + [Sub-sub-heading](#sub-sub-heading-2)
 
+## Packaging Layout / Dependency Attribution
+This section covers the various *modules* used in the project:
 
-# Heading levels
+![image](https://user-images.githubusercontent.com/65324839/136126343-9e34d8de-1405-4516-8070-e4f938108f4a.png)
 
-> This is a fixture to test heading levels
+* controller
+> Class : IntegerToRomanConvController
+>  
+> Handles REST requests. I have coded GET request for romannumeral URI with one query param. Following is the URI supported by this controller class, 'http://localhost:8080/romannumeral?query={integer}', which takes input as integer and returns JSON response.
+> To delegate the request to IntegerToRomanConverterService class, we are instantiating service object here in the constructor.
 
-<!-- toc -->
-
-## Project Overview
-
-This project is for converting Integer to Roman numeral value. Following endpoint 'http://localhost:8080/romannumeral?query={integer}' is made available for taking integer as an input and convert into Roman numeral value and return JSON response with input and output.
-
-### Sub-heading
-
-This is an h2 heading
-
-#### Sub-sub-heading
-
-This is an h3 heading
-
-## Heading
-
-This is an h1 heading
-
-### Sub-heading
-
-This is an h2 heading
-
-#### Sub-sub-heading
-
-This is an h3 heading
-
-## Heading
-
-This is an h1 heading
-
-### Sub-heading
-
-This is an h2 heading
-
-#### Sub-sub-heading
-
-This is an h3 heading
 
 ### Project Overview
 
