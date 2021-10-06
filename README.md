@@ -7,9 +7,9 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 
 * [Packaging Layout/Dependency Attribution](#packaging-layout-/-dependency-attribution)
 * [Technologies Used](#technologies-used)
-* [Building & Running Project](#building-&-running-project)
+* [Building and Running Project](#building-and-running-project)
     * [Pre-steps](#pre-steps)
-    * [Automated Script - steps to run the project](#automated-script-steps-to-run-the-project)
+    * [Automated Script: steps to run the project](#automated-script-:-steps-to-run-the-project)
 * [Integrate Grafana with Prometheus metrics](#integrate-grafana-with-prometheus-metrics)
 * [Monitoring Application metrics queries](#monitoring-application-metrics-queries)
 * [Alerting](#alerting)
@@ -64,7 +64,7 @@ This section covers the various **modules** used in the project:
 - Prometheus
 - Grafana
 
-## Building & Running Project:
+## Building and Running Project:
 ![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
 
 This process presumes that your system has the following software's pre-installed: git, docker, kubernetes.
@@ -86,7 +86,7 @@ The above Dockerfile which is a **multi-stage build**, in the first stage, clone
 docker push sannihithatummala/a-project:latest
 ```
 
-### Automated Script - steps to run the project:
+### Automated Script: steps to run the project:
 Run the 'automation-script' shell script available at 'https://github.com/sannihithatummala23/DevOps' which executes the below steps:
 
 >1. Create a directory called 'project' and clone 'https://github.com/sannihithatummala23/DevOps' into it.
