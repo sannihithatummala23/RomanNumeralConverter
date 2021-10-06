@@ -59,13 +59,12 @@ This section covers the various **modules** used in the project:
 > In this we are having classes to handle the exceptions thrown by controller classes.
 
 ## Tools/Technologies Used:
-- JAVA
+
+![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
+
 - Kubernetes
-- Prometheus
-- Grafana
 
 ## Building and Running Project:
-![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
 
 This process presumes that your system has the following software's pre-installed: git, docker, kubernetes.
 
