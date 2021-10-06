@@ -37,7 +37,11 @@ This section covers the various modules used in the project.
 >  
 > In this we are having classes to handle the exceptions thrown by controller classes.
 
-## DevOps CD Process:
+![image](https://user-images.githubusercontent.com/65324839/136126343-9e34d8de-1405-4516-8070-e4f938108f4a.png)
+
+## Dependency Attribution:
+
+## Building & Running Project:
 ![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
 
 This process presumes that your system has the following software's pre-installed: git, docker, kubernetes.
@@ -86,6 +90,7 @@ Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
 
 Login to Grafana and click on "Add Data Source" and select "Prometheus", then update HTTP URL(Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc') as defined in the prometheus.yml file.
 ![Prometheus Config](https://user-images.githubusercontent.com/65324839/136107905-93bf6d84-3902-4cd3-a298-3d869e4cff66.JPG)
+
 
 
 Create a dashboard to visualize Prometheus metrics.
