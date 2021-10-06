@@ -104,7 +104,7 @@ Create a dashboard to visualize Prometheus metrics.
 
 ![Image 10-4-21 at 10 49 PM](https://user-images.githubusercontent.com/65324839/136107968-028f4042-139e-4df8-8391-c30c2a626172.JPG)
 
-Monitoring Application metrics queries:
+### Monitoring Application metrics queries:
 
 
 ![Exception query](https://user-images.githubusercontent.com/65324839/136108309-77b9798e-1feb-4b3e-98d7-391f9cdfc3a0.JPG)
@@ -117,6 +117,13 @@ Monitoring Application metrics queries:
 
 
 ![cpu usage query](https://user-images.githubusercontent.com/65324839/136108195-ba97f53d-3470-4102-b3d4-d79a7e8aa80f.JPG)
+
+
+### Alerting:
+
+Additionally, we can also configure alerting in Grafana and Prometheus(AlertManager). Below is an example of the alerting mechanism in which, grafana evaluated the set conditions, and if the condition is met, it can notify us using the various plugins available like Email, Slack, Teams, PagerDuty....
+
+![Image 10-4-21 at 9 41 PM](https://user-images.githubusercontent.com/65324839/136130381-87ef0ed4-9faf-4a0f-afb4-726577bade54.JPG)
 
 
 ## Testing Methodology:
