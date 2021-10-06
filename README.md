@@ -1,4 +1,4 @@
-* [Packaging Layout / Dependency Attribution](#general-information)
+* [Packaging Layout / Dependency Attribution](#packaging-layout/dependency-attribution)
 * [Technologies Used](#technologies-used)
 * [Building & Running Project](#Building-running-project)
     * [Pre-steps](#pre-steps)
