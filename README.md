@@ -6,7 +6,7 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 
 ## Packaging Layout:
 
-This section covers the various modules used in the project.
+This section covers the various modules used in the project:
 
 ![image](https://user-images.githubusercontent.com/65324839/136126343-9e34d8de-1405-4516-8070-e4f938108f4a.png)
 
@@ -40,6 +40,9 @@ This section covers the various modules used in the project.
 > In this we are having classes to handle the exceptions thrown by controller classes.
 
 ## Dependency Attribution:
+
+This section explains the various dependencies used:
+
 
 ## Building & Running Project:
 ![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
