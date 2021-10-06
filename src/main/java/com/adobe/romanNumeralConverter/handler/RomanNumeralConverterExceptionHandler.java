@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class RomanNumeralConverterExceptionHandler {
 
     /**
-     * Handles exception when input is not in range 1-3999
+     * Handles exception when input is not in range 1-3999.
      *
      * @param exception
      */
@@ -24,7 +24,7 @@ public class RomanNumeralConverterExceptionHandler {
     }
 
     /**
-     * Handles exception when string type inputs or for other invalid inputs passed in query param
+     * Handles exception when string type inputs or for other invalid inputs passed in query param.
      *
      * @param exception
      */
@@ -35,7 +35,7 @@ public class RomanNumeralConverterExceptionHandler {
 
     }
     /**
-     * Handles exception when string type inputs or for other invalid inputs passed in query param
+     * Handles exception when URI is invalid.
      *
      * @param exception
      */
