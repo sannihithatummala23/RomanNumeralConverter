@@ -5,11 +5,11 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 
 ## Table of Contents
 
-* [Packaging Layout / Dependency Attribution](#packaging-layout-/-dependency-attribution)
-* [Technologies Used](#technologies-used)
-* [Building & Running Project](#building-&-running-project)
+* [Packaging Layout / Dependency Attribution]
+* [Technologies Used]
+* [Building & Running Project]
     * [Pre-steps](#pre-steps)
-    * [Automated Script - steps to run the project](#automated-script-steps-to-run-the-project)
+    * [Automated Script - steps to run the project]
 * [Integrate Grafana with Prometheus metrics](#integrate-grafana-with-prometheus-metrics)
 * [Monitoring Application metrics queries](#monitoring-application-metrics-queries)
 * [Alerting](#alerting)
@@ -38,7 +38,7 @@ This section covers the various **modules** used in the project:
 > Class : RomanNumeral
 > 
 >Here we have RomanNumeral model object used as part of Romannumeral conversion service class for returning response with input and converted value.
-* configuration
+* **configuration**
 > Class : RomanNumeralConverterConfig
 > 
 > We are maintaining configuration classes for binding the properties defined in application.properties file.
@@ -220,7 +220,7 @@ Additionally, we can also configure alerting in Grafana and Prometheus(AlertMana
        ![-23](https://user-images.githubusercontent.com/65324839/136108472-6a1918c9-181c-4a17-b0c4-c2d222e8b767.JPG)
 
 ## Engineering Methodology:
-- CI/CD (Requirement Gathering > Planning > Developing > Testing > Releasing > Monitoring)
+- DevOps CI/CD (Requirement Gathering > Planning > Developing > Testing > Releasing > Monitoring)
 
 ## Room for Improvement:
 - Can automate the whole process using Jenkins/GitLab pipeline.
