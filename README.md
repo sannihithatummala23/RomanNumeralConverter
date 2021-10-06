@@ -81,9 +81,11 @@ $`docker run -d --name grafana -p 3000:3000 grafana/grafana`
 
 >5. Use the 'prometheus.yml' file available in the GitHub Project 'https://github.com/sannihithatummala23/DevOps' to configure the prometheus scrape_configs: 'spring-actuator' targets:[xx:xx:xx:xx:8080] with the Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc', so that it retrives the metrics data from Spring Boot Actuator /prometheus endpoint 'http://localhost:8080/actuator/prometheus'. Then deploy prometheus by executing the docker command:
 $`docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml`
+
 ![metrics](https://user-images.githubusercontent.com/65324839/136110222-9bf65975-b69f-4e4b-b575-f48bddfe45ee.JPG)
 
 Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
+
 ![Prometheus UI](https://user-images.githubusercontent.com/65324839/136108956-60f75b19-77e1-4d06-bb28-6e092b1477f6.JPG)
 
 ## Integrate Grafana with Prometheus metrics:
@@ -94,17 +96,23 @@ Login to Grafana and click on "Add Data Source" and select "Prometheus", then up
 
 
 Create a dashboard to visualize Prometheus metrics.
+
 ![Image 10-4-21 at 10 49 PM](https://user-images.githubusercontent.com/65324839/136107968-028f4042-139e-4df8-8391-c30c2a626172.JPG)
 
 Monitoring Application metrics queries:
 
+
 ![Exception query](https://user-images.githubusercontent.com/65324839/136108309-77b9798e-1feb-4b3e-98d7-391f9cdfc3a0.JPG)
+
 
 ![status 400 query](https://user-images.githubusercontent.com/65324839/136108283-9ebc000c-b928-47d0-b8ca-f4568913a018.JPG)
 
+
 ![process uptime](https://user-images.githubusercontent.com/65324839/136108231-e65aae5e-d363-41bb-8ba9-fd08a9713069.JPG)
 
+
 ![cpu usage query](https://user-images.githubusercontent.com/65324839/136108195-ba97f53d-3470-4102-b3d4-d79a7e8aa80f.JPG)
+
 
 ## Testing Methodology:
  >1. JUNIT test cases are already included as part of project to test positive (i.e giving integer as input) and negative case(i.e giving string as input).
@@ -118,30 +126,37 @@ Monitoring Application metrics queries:
      }
      ![3999](https://user-images.githubusercontent.com/65324839/136107067-1404f8bb-6646-4cb4-8c98-fc9e61e1058f.JPG)
 
+
  >   * Case 2: URI : 'http://localhost:8080/romannumeral?query=0'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
        ![0](https://user-images.githubusercontent.com/65324839/136107018-75805066-bcb6-46ac-898e-a2b780d133bd.JPG)
+
 
  >   * Case 3 : URI : 'http://localhost:8080/romannumeral?query=sanni'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
        ![sanni](https://user-images.githubusercontent.com/65324839/136106941-649e8c99-71c3-41d4-80c7-5283a01fe41c.JPG)
 
+
  >   * Case 4 : URI : 'http://localhost:8080/romannumeral?query=null'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
        ![null](https://user-images.githubusercontent.com/65324839/136106702-1d10feed-2a32-41a8-ae3d-51ef35fc4c71.JPG)
+
 
  >   * Case 5 : URI : 'http://localhost:8080/romannumeral'
        Expected Output : URI is not supported. Please make a request to : 'http://localhost:8080/romannumeral?query={integer}' for getting integer converted to Roman numeral
        ![romannumeral](https://user-images.githubusercontent.com/65324839/136106673-7be45cc4-e710-4bc1-9177-4bebd2971e07.JPG)
 
+
  >   * Case 6 : URI : 'http://localhost:8080/romannumeral?query=4000'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
        !![4000](https://user-images.githubusercontent.com/65324839/136106518-5a838c79-e7d8-4a44-9c10-225ba482facf.JPG)
 
+
  >   * Case 7 : URI : 'http://localhost:8080/romannumeral?query=1.2'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
        ![1 2](https://user-images.githubusercontent.com/65324839/136106185-c0aae7a2-2bd3-4c88-8900-617ee41aeefb.JPG)
-       
+
+
  >   * Case 8 : URI : 'http://localhost:8080/romannumeral?query=-23'
        Expected Output : Invalid Request. Input should be in the range of 1-3999 numbers
        ![-23](https://user-images.githubusercontent.com/65324839/136108472-6a1918c9-181c-4a17-b0c4-c2d222e8b767.JPG)
