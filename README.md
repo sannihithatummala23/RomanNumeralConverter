@@ -1,36 +1,21 @@
-* [Packaging Layout / Dependency Attribution](#packaging-layout-dependency-attribution)
-* [Technologies Used](#technologies-used)
-* [Building & Running Project](#Building-running-project)
-    * [Pre-steps](#pre-steps)
-    * [Automated Script - steps to run the project](#automated-script)
-* [Integrate Grafana with Prometheus metrics](#Integrate-Grafana-with-Prometheus-metrics)
-* [Monitoring Application metrics queries](#monitoring-application-metrics-queries)
-* [Alerting](#alerting)
-* [Testing Methodology](#testing-methodology)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-
-
-- [Heading](#heading)
-  * [Sub-heading](#sub-heading)
-    + [Sub-sub-heading](#sub-sub-heading)
-
-## Packaging Layout / Dependency Attribution
-This section covers the various *modules* used in the project:
-
-![image](https://user-images.githubusercontent.com/65324839/136126343-9e34d8de-1405-4516-8070-e4f938108f4a.png)
-
-* controller
-> Class : IntegerToRomanConvController
->  
-> Handles REST requests. I have coded GET request for romannumeral URI with one query param. Following is the URI supported by this controller class, 'http://localhost:8080/romannumeral?query={integer}', which takes input as integer and returns JSON response.
-> To delegate the request to IntegerToRomanConverterService class, we are instantiating service object here in the constructor.
-
 
 ### Project Overview
 
 This project is for converting Integer to Roman numeral value. Following endpoint 'http://localhost:8080/romannumeral?query={integer}' is made available for taking integer as an input and convert into Roman numeral value and return JSON response with input and output.
+
+## Table of Contents
+
+* [Packaging Layout / Dependency Attribution](#packaging-layout-dependency-attribution)
+* [Technologies Used](#technologies-used)
+* [Building & Running Project](#building-running-project)
+    * [Pre-steps](#pre-steps)
+    * [Automated Script - steps to run the project](#automated-script-steps-to-run-the-project)
+* [Integrate Grafana with Prometheus metrics](#integrate-grafana-with-prometheus-metrics)
+* [Monitoring Application metrics queries](#monitoring-application-metrics-queries)
+* [Alerting](#alerting)
+* [Testing Methodology](#testing-methodology)
+* [Room for Improvement](#room-for-improvement)
+* [Contact](#contact)
 
 ## Packaging Layout / Dependency Attribution:
 
@@ -73,6 +58,11 @@ This section covers the various *modules* used in the project:
 >  
 > In this we are having classes to handle the exceptions thrown by controller classes.
 
+## Tools/Technologies Used:
+- JAVA
+- Kubernetes
+- Prometheus
+- Grafana
 
 ## Building & Running Project:
 ![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
@@ -159,7 +149,7 @@ Create a dashboard to visualize Prometheus metrics.
 
 ![Image 10-4-21 at 10 49 PM](https://user-images.githubusercontent.com/65324839/136107968-028f4042-139e-4df8-8391-c30c2a626172.JPG)
 
-### Monitoring Application metrics queries:
+## Monitoring Application metrics queries:
 
 
 ![Exception query](https://user-images.githubusercontent.com/65324839/136108309-77b9798e-1feb-4b3e-98d7-391f9cdfc3a0.JPG)
@@ -174,7 +164,7 @@ Create a dashboard to visualize Prometheus metrics.
 ![cpu usage query](https://user-images.githubusercontent.com/65324839/136108195-ba97f53d-3470-4102-b3d4-d79a7e8aa80f.JPG)
 
 
-### Alerting:
+## Alerting:
 
 Additionally, we can also configure alerting in Grafana and Prometheus(AlertManager). Below is an example of the alerting mechanism in which, grafana evaluated the set conditions, and if the condition is met, it can notify us using the various plugins available like Email, Slack, Teams, PagerDuty....
 
@@ -227,5 +217,13 @@ Additionally, we can also configure alerting in Grafana and Prometheus(AlertMana
  >   * Case 8 : URI : 'http://localhost:8080/romannumeral?query=-23'
        Expected O/P : Invalid Request. Input should be in the range of 1-3999 numbers
        ![-23](https://user-images.githubusercontent.com/65324839/136108472-6a1918c9-181c-4a17-b0c4-c2d222e8b767.JPG)
+
+## Room for Improvement:
+- Can automate the whole process using Jenkins/GitLab pipeline
+
+## Contact:
+- Developed by Sannihitha Tummala
+- sannihithatummala@gmail.com
+
 
      
