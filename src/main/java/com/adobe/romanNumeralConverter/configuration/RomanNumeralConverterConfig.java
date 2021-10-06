@@ -6,6 +6,10 @@ import lombok.NoArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+/*
+This binds the properties defined in the application.properties file to the instance variables.
+*/
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
