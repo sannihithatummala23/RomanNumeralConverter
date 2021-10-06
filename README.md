@@ -3,7 +3,7 @@
 
 This project is for converting Integer to Roman numeral value. Following endpoint 'http://localhost:8080/romannumeral?query={integer}' is made available for taking integer as an input and convert into Roman numeral value and return JSON response with input and output.
 
-## Table of Contents
+## Contents
 
 * [Packaging Layout/Dependency Attribution](#packaging-layout-/-dependency-attribution)
 * [Technologies Used](#technologies-used)
