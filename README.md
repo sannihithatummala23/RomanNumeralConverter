@@ -6,7 +6,7 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 ## Contents
 
 * [Packaging Layout/Dependency Attribution](#packaging-layout-/-dependency-attribution)
-* [Technologies Used](#technologies-used)
+* [Tools/Technologies Used](#tools-/-technologies-used)
 * [Building and Running Project](#building-and-running-project)
     * [Pre-steps](#pre-steps)
     * [Automated Script: steps to run the project](#automated-script-steps-to-run-the-project)
@@ -62,7 +62,7 @@ This section covers the various **modules** used in the project:
 
 ![CD](https://user-images.githubusercontent.com/65324839/136108524-7a83e5c3-7130-4636-851a-17f65f910cf3.JPG)
 
-- Kubernetes
+- **Kubernetes**
 
 ## Building and Running Project:
 
