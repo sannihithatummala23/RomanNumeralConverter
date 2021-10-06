@@ -66,7 +66,7 @@ The above Dockerfile which is a multi-stage build, in the first stage, clones th
 
 ``` bash
 docker push sannihithatummala/a-project:1.0
-bash
+```
 
 ### Automated Script - steps to run the project:
 Run the 'automation-script' shell script available at 'https://github.com/sannihithatummala23/DevOps' which executes the below steps:
@@ -77,7 +77,7 @@ Run the 'automation-script' shell script available at 'https://github.com/sannih
 
 ``` bash
 kubectl create namespace monitoring
-bash
+```
 
 ``` bash
 kubectl create -f deployment.yml
