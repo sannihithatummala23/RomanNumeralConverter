@@ -55,7 +55,7 @@ This process presumes that your system has the following software's pre-installe
 >1. Create a Docker image using the Dockerfile available in the GitHub Project 'https://github.com/sannihithatummala23/DevOps' by executing the command:
 
 ``` bash
-$docker build --build-arg url=https://github.com/sannihithatummala23/RomanNumeralConverter.git\
+docker build --build-arg url=https://github.com/sannihithatummala23/RomanNumeralConverter.git\
   --build-arg project=RomanNumeralConverter\
   -t sannihithatummala/a-project - < Dockerfile
 ```
