@@ -63,6 +63,7 @@ docker build --build-arg url=https://github.com/sannihithatummala23/RomanNumeral
 The above Dockerfile which is a multi-stage build, in the first stage, clones the project from the GitHub url. In the second stage, it copies the required files from the first stage and helps to build the final image required to run the spring-boot application using the embedded Tomcat server.
 
 >2. Then we upload the created docker image that can be found in (docker image ls) to hub.docker.com by executing the command:
+
 ``` bash
 docker push sannihithatummala/a-project:1.0
 bash
@@ -73,6 +74,7 @@ Run the 'automation-script' shell script available at 'https://github.com/sannih
 >1. Create a directory called 'project' and clone 'https://github.com/sannihithatummala23/DevOps' into it.
 
 >2. Create a K8 nameSpace called 'monitoring' and execute the k8 deployment and service files to create a deployment and service for our application:
+
 ``` bash
 kubectl create namespace monitoring
 bash
@@ -88,6 +90,7 @@ kubectl create -f service.yml
 This ends up creating a pod and the service for the RomanNumeralConverter application.
 
 >3. In order to access the application 'http://localhost:8080/romannumeral?query=999', we need to execute k8 port-forwarding command that runs as backround process:
+
 ``` bash
 kubectl port-forward service/romannumeralconverter-svc -n monitoring 8080:8080 &
 ```
@@ -97,12 +100,14 @@ We can also check the health of the application by hitting 'http://localhost:808
 ![health](https://user-images.githubusercontent.com/65324839/136110196-142fe24c-f86a-4d11-9bf9-4514dfcb5ca7.JPG)
 
 >4. Deploy Grafana by executing the docker commands:
+
 ``` bash
 docker run -d --name grafana -p 3000:3000 grafana/grafana
 ```
 And navigate to 'http://localhost:3000' to explore the Grafana.
 
 >5. Use the 'prometheus.yml' file available in the GitHub Project 'https://github.com/sannihithatummala23/DevOps' to configure the prometheus scrape_configs: 'spring-actuator' targets:[xx:xx:xx:xx:8080] with the Cluster-IP address we retrive from the k8 Service 'romannumeralconverter-svc', so that it retrives the metrics data from Spring Boot Actuator /prometheus endpoint 'http://localhost:8080/actuator/prometheus'. Then deploy prometheus by executing the docker command:
+
 ``` bash
 docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
 ```
