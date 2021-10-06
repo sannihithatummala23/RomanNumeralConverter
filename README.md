@@ -5,11 +5,11 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 
 ## Table of Contents
 
-* [Packaging Layout / Dependency Attribution]
-* [Technologies Used]
-* [Building & Running Project]
+* [Packaging Layout/Dependency Attribution](#packaging-layout-/-dependency-attribution)
+* [Technologies Used](#technologies-used)
+* [Building & Running Project](#building-&-running-project)
     * [Pre-steps](#pre-steps)
-    * [Automated Script - steps to run the project]
+    * [Automated Script-steps to run the project](#automated-script-steps-to-run-the-project)
 * [Integrate Grafana with Prometheus metrics](#integrate-grafana-with-prometheus-metrics)
 * [Monitoring Application metrics queries](#monitoring-application-metrics-queries)
 * [Alerting](#alerting)
