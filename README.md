@@ -9,7 +9,7 @@ This project is for converting Integer to Roman numeral value. Following endpoin
 * [Technologies Used](#technologies-used)
 * [Building & Running Project](#building-&-running-project)
     * [Pre-steps](#pre-steps)
-    * [Automated Script-steps to run the project](#automated-script-steps-to-run-the-project)
+    * [Automated Script - steps to run the project](#automated-script-steps-to-run-the-project)
 * [Integrate Grafana with Prometheus metrics](#integrate-grafana-with-prometheus-metrics)
 * [Monitoring Application metrics queries](#monitoring-application-metrics-queries)
 * [Alerting](#alerting)
@@ -130,11 +130,11 @@ And navigate to 'http://localhost:3000' to explore the Grafana.
 docker run -d --name prometheus -p 9090:9090 -v /{path to file}/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
 ```
 
-### Prometheus Metrics scraped from the application:
+##### Prometheus Metrics scraped from the application:
 
 ![metrics](https://user-images.githubusercontent.com/65324839/136110222-9bf65975-b69f-4e4b-b575-f48bddfe45ee.JPG)
 
-Navigate to 'http://localhost:9090' to explore the Prometheus dashboard.
+Navigate to 'http://localhost:9090' to explore the **Prometheus** dashboard.
 
 ![Prometheus UI](https://user-images.githubusercontent.com/65324839/136108956-60f75b19-77e1-4d06-bb28-6e092b1477f6.JPG)
 
@@ -145,7 +145,7 @@ Login to Grafana and click on "Add Data Source" and select "Prometheus", then up
 
 
 
-### Create a dashboard to visualize Prometheus metrics:
+##### Create a dashboard to visualize Prometheus metrics:
 
 ![Image 10-4-21 at 10 49 PM](https://user-images.githubusercontent.com/65324839/136107968-028f4042-139e-4df8-8391-c30c2a626172.JPG)
 
@@ -220,7 +220,7 @@ Additionally, we can also configure alerting in Grafana and Prometheus(AlertMana
        ![-23](https://user-images.githubusercontent.com/65324839/136108472-6a1918c9-181c-4a17-b0c4-c2d222e8b767.JPG)
 
 ## Engineering Methodology:
-- DevOps CI/CD (Requirement Gathering > Planning > Developing > Testing > Releasing > Monitoring)
+- DevOps Agile (Requirement Gathering > Planning > Developing > Testing > Releasing > Monitoring)
 
 ## Room for Improvement:
 - Can automate the whole process using Jenkins/GitLab pipeline.
