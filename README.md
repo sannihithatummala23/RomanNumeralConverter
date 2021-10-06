@@ -65,7 +65,7 @@ The above Dockerfile which is a multi-stage build, in the first stage, clones th
 >2. Then we upload the created docker image that can be found in (docker image ls) to hub.docker.com by executing the command:
 
 ``` bash
-docker push sannihithatummala/a-project:1.0
+docker push sannihithatummala/a-project:latest
 ```
 
 ### Automated Script - steps to run the project:
