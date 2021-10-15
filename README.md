@@ -98,11 +98,11 @@ kubectl create namespace monitoring
 ```
 
 ``` bash
-kubectl create -f deployment.yml
+kubectl create -f deployment.yml -n monitoring
 ```
 
 ``` bash
-kubectl create -f service.yml
+kubectl create -f service.yml -n monitoring
 ```
 
 This ends up creating a pod and the service for the RomanNumeralConverter application.
